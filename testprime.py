@@ -20,5 +20,8 @@ class TestPrime(unittest.TestCase):
 	def test_integers_less_than_zero(self):
 		self.assertEqual(primes(-5), "primes are greater than 1")
 
+	def test_three_returns_two_and_three(self):
+		self.assertEqual(primes(3), [2, 3])
+
 if __name__ == '__main__':
 	unittest.main()
