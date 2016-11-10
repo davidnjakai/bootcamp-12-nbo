@@ -1,4 +1,6 @@
 def primes(n):
+	if not isinstance(n, int):
+		return "only integers allowed"
 	prime_list = [2, 3]
 	if n <= 3:
 		return prime_list
@@ -10,4 +12,3 @@ def primes(n):
 		if prime_flag:
 			prime_list.append(i)
 	return prime_list
-print primes(10)
