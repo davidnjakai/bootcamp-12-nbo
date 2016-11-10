@@ -23,5 +23,8 @@ class TestPrime(unittest.TestCase):
 	def test_three_returns_two_and_three(self):
 		self.assertEqual(primes(3), [2, 3])
 
+	def test_range_inclusive_of_passed_integer(self):
+		self.assertEqual(primes(11), [2, 3, 5, 7, 11])
+
 if __name__ == '__main__':
 	unittest.main()
