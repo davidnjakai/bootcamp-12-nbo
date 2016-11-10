@@ -5,6 +5,8 @@ def primes(n):
 		return []
 	if n == 2:
 		return [2]
+	if n < 0:
+		return "primes are greater than 1"
 	prime_list = [2, 3]
 	if n <= 3:
 		return prime_list
