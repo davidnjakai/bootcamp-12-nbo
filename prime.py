@@ -3,6 +3,8 @@ def primes(n):
 		return "only integers allowed"
 	if n == 1 or n == 0:
 		return []
+	if n == 2:
+		return [2]
 	prime_list = [2, 3]
 	if n <= 3:
 		return prime_list
