@@ -70,5 +70,8 @@ class TestPrime(unittest.TestCase):
 		                                        4831, 4861, 4871, 4877, 4889, 4903, 4909, 4919, 4931, 4933, 4937, 4943, 4951, 4957,\
 		                                         4967, 4969, 4973, 4987, 4993, 4999])
 
+	def test_669_primes_upto_5000(self):
+		self.assertEqual(len(primes(5000)), 669)
+
 if __name__ == '__main__':
 	unittest.main()
