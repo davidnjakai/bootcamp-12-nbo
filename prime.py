@@ -1,4 +1,7 @@
 def primes(n):
+	"""
+	function for calculating prime numbers with O(n^2) time complexity
+	"""
 	if not isinstance(n, int):
 		return "only integers allowed"
 	if n == 1 or n == 0:
